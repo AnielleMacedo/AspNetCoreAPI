@@ -1,0 +1,174 @@
+﻿@model TestCrudCore.Models.ManutenzioneModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>ManutenzioneModel</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MacchinaImg)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MacchinaImg)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CodMacchina)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CodMacchina)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DesMacchina)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DesMacchina)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IdTipoGetMacchina)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdTipoGetMacchina)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Modello)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Modello)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Matricola)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Matricola)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Marca)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Marca)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OreDisponibilita)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OreDisponibilita)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Autonoma)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Autonoma)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MultiCommessa)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MultiCommessa)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DataAcquisto)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DataAcquisto)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Specifiche)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Specifiche)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IdStato)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdStato)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IdFunzione)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdFunzione)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IdReparto)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdReparto)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IdCentrocosto)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdCentrocosto)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CostoOrario)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CostoOrario)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OnLine)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OnLine)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Schedula)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Schedula)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TipoConnessione)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TipoConnessione)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DesConnessione)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DesConnessione)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Validita)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Validita)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DesReparto)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DesReparto)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DesFunzione)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DesFunzione)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DesStato)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DesStato)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DesCentrocosto)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DesCentrocosto)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.IdMacchina">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

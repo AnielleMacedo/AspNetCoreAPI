@@ -1,0 +1,42 @@
+﻿@model TestCrudCore.Models.ManutenzioneModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Macchina</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IdMacchina)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IdMacchina)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CodMacchina)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CodMacchina)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Modello)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Modello)
+        </dd>
+        @*<dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Marca)
+        </dd>*@
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="IdMacchina" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

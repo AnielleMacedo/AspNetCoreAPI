@@ -1,0 +1,184 @@
+﻿@model IEnumerable<TestCrudCore.Models.ManutenzioneModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MacchinaImg)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CodMacchina)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DesMacchina)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdTipoGetMacchina)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Modello)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Matricola)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Marca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OreDisponibilita)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Autonoma)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MultiCommessa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataAcquisto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Specifiche)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdStato)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdFunzione)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdReparto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdCentrocosto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CostoOrario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OnLine)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Schedula)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoConnessione)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DesConnessione)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Validita)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DesReparto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DesFunzione)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DesStato)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DesCentrocosto)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MacchinaImg)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodMacchina)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DesMacchina)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdTipoGetMacchina)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Modello)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Matricola)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Marca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OreDisponibilita)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Autonoma)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MultiCommessa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataAcquisto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Specifiche)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdStato)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdFunzione)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdReparto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdCentrocosto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CostoOrario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OnLine)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Schedula)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoConnessione)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DesConnessione)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Validita)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DesReparto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DesFunzione)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DesStato)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DesCentrocosto)
+            </td>
+            <td><a asp-action="Edit" asp-route-id="@item.IdMacchina">Edit</a> </td>
+            <td>  <a asp-action="Details" asp-route-id="@item.IdMacchina">Details</a></td>
+            <td><a asp-action="Delete" asp-route-id="@item.IdMacchina">Delete</a></td>
+            
+        </tr>
+}
+    </tbody>
+</table>
